@@ -7,7 +7,7 @@ export default function Home() {
     <div className={styles.frameDiv}>
     <section className={[styles.headerSection].join(' ')}>
       <div className={styles.headerBox}>
-        <img className={[styles.logoIcon].join(' ')} src='./images/Icon.svg'/>
+        <img className={[styles.logoIcon].join(' ')} src='./Icon.svg'/>
       </div>
       <div className={styles.headerBox}>
         <div>

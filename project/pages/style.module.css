@@ -1,3 +1,4 @@
+
 .frameDiv{
     display: flex;
     flex-direction: column;
@@ -31,7 +32,7 @@
 }
 
 .imageSection{
-    background-image: url('./images/hintergrund.svg');
+    background-image: src('./hintergrund.svg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
