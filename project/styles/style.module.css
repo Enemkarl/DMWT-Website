@@ -1,0 +1,142 @@
+/*Ist glaub eh Standard, aber sicher ist sicher*/
+.frameDiv{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Header Section mit clamp-Funktionen als Padding für dynamische Anpassung bei Veränderung der Fenstergröße
+Grid kann teorethisch auch in flex geänderrt werden, fand grid nur einfacher*/
+.headerSection{
+    padding-top: clamp(0.5rem, 0.478vw + 0.347rem, 1rem);
+    padding-bottom: clamp(0.5rem, 0.478vw + 0.347rem, 1rem);
+    display: grid;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #06A64A;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/*Für gleichmäßige Verteilung und Größe*/
+.headerBox{
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+}
+
+/*Um Icon rechts zu haben*/
+#headerIconBox{
+    justify-content: left;
+}
+
+/*Für gleichen Abstand und zentrale Ausrichtung*/
+#headerMenuContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+#headerRegisterBox{
+    text-align: right;
+}
+
+/*Maximale Größe begrenzen*/
+.logoIcon{
+    max-height: 6rem;
+}
+
+/*Größe und Position festlegen*/
+.registerButton{
+    max-height: 6rem;
+    max-width: 50%;
+    float: right;
+    padding-left: clamp(0.5rem, 0.478vw + 0.347rem, 1rem);
+    padding-right: clamp(0.5rem, 0.478vw + 0.347rem, 1rem);
+    padding-top: clamp(0.25rem, 0.239vw + 0.174rem, 0.5rem);
+    padding-bottom: clamp(0.25rem, 0.239vw + 0.174rem, 0.5rem);
+}
+
+/*Anderes Padding top und bottom als beim Header
+Grid um Row-Gap einzufügen für besseres Spacing*/
+.bodySection{
+    padding-top: clamp(2rem, 1.912vw + 1.388rem, 4rem);
+    padding-bottom: clamp(2rem, 1.912vw + 1.388rem, 4rem);
+    text-align: left;
+    display: grid;
+    row-gap: clamp(2rem, 1.912vw + 1.388rem, 4rem);
+}
+
+/*Bildbereich*/
+.imageSection{
+    background-image: url('../public/hintergrund.svg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60vh;
+    max-height: 60vh;
+}
+
+/*Abstand der Elemente festlegen
+Sollte aber auch mit Variablen/auf höherer Ebene passieren können*/
+.infoContainer{
+    gap: clamp(1rem, 1.912vw + 0.388rem, 3rem);
+}
+
+/*Größe h1 festlegen, kann auch global gemacht werden und mit clamp-function für bessere Skalierbarkeit*/
+.headline1{
+    font-size: 4.8rem;
+}
+
+/*Grid mit gleicher Spaltengröße und dynamischem Abstand*/
+.infoBoxContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(2rem, 1.912vw + 1.388rem, 4rem);
+}
+
+/*Padding für Info Blöcke*/
+.infoBox{
+    padding-left: clamp(1rem, 0.956vw + 0.694rem, 2rem);
+    padding-right: clamp(1rem, 0.956vw + 0.694rem, 2rem);
+    padding-bottom: clamp(0.5rem, 0.478vw + 0.347rem, 1rem);
+    padding-top: clamp(0.5rem, 0.478vw + 0.347rem, 1rem);
+}
+
+/*Größe h2 festlegen, kann auch global gemacht werden und mit clamp-function für bessere Skalierbarkeit*/
+.headline2{
+    font-size: 2.4rem;
+}
+
+/*Auch hier global skalierbar machen bzw. dynamisch veränderbar*/
+.infoText{
+    font-size: 1.1rem;
+}
+
+/*2 Spalten mit dynamischen Abstand*/
+.infoCardContainer{
+    display: flex;
+    flex-direction: row;
+    gap: clamp(2rem, 1.912vw + 1.388rem, 4rem);
+}
+
+/*Rahmen für Karte festlegen*/
+.infoCard{
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+
+/*Rahmen und Größe für Info Bild festlegen*/
+.infoCardImage{
+    max-width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+/*Padding und Spacing/Gap bestimmen*/
+.infoCardText{
+    padding-top: clamp(0.5rem, 0.478vw + 0.347rem, 1rem);
+    padding-bottom: clamp(0.5rem, 0.478vw + 0.347rem, 1rem);
+    padding-left: clamp(1rem, 0.956vw + 0.694rem, 2rem);
+    padding-right: clamp(1rem, 0.956vw + 0.694rem, 2rem);
+    row-gap: clamp(0.5rem, 0.478vw + 0.347rem, 1rem);
+}
