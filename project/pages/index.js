@@ -1,8 +1,10 @@
 {/*Import des React Frameworks und des Stylesheets*/}
 import React from 'react';
 import styles from '../styles/style.module.css';
+import Link from 'next/link';
 
 export default function Home() {
+
   return (
     /*Umschließendes Div, da return sonst nicht funktioniert */
     <div className={styles.frameDiv}>
@@ -11,9 +13,9 @@ export default function Home() {
     Header und Footer bekommen ein anderes Styling als die regulären Sections, da sie schmaler ausfallen sollen*/}
     <section className={[styles.headerSection].join(' ')}>
       <div className={styles.headerBox} id={styles.headerIconBox}>
-      <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>
+      <Link href='/'>
         <img className={[styles.logoIcon].join(' ')} src='./Icon.svg' alt='Firmen Icon'/>
-        </a>
+        </Link>
       </div>
       <div className={styles.headerBox} id={styles.headerMenuContainer}>
         <div>
@@ -30,11 +32,11 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.headerBox} id={styles.headerRegisterBox}>
-        <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>
+        <Link href='/fetch'>
           <button className={styles.registerButton}>
           Register
           </button>
-        </a>
+        </Link>
       </div>
     </section>
     {/*Die Section ist ein bisschen verschwendet, da keinerlei Inhalte vermittelt werden, vielleicht als Hero-Section umwandeln */}
@@ -147,7 +149,7 @@ export default function Home() {
         </a>
       </div>
     </section>
-    {/*Globales Styling das auf alle Elemnte dieser Tags angewendet werden kann/soll*/}
+    {/*Globales Styling das auf alle Elemente dieser Tags angewendet werden kann/soll*/}
     <style jsx global>{`
         html,
         body {
