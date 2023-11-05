@@ -1,0 +1,1 @@
+Konsolen befehl "npm i swr" nötig!
