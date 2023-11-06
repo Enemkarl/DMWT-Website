@@ -25,29 +25,26 @@ export default function CommentList() {
       {/* Header-Bereich */}
       <section className={[styles.headerSection].join(' ')}>
         <div className={styles.headerBox} id={styles.headerIconBox}>
-          {/* Link zur Startseite */}
           <Link href='/'>
             <img className={[styles.logoIcon].join(' ')} src='./Icon.svg' alt='Firmen Icon' />
           </Link>
         </div>
         <div className={styles.headerBox} id={styles.headerMenuContainer}>
-          {/* Navigationslinks */}
           <div>
-            <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>Features</a>
+            <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'><p>Features</p></a>
           </div>
           <div>
-            <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>Pricing</a>
+            <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'><p>Pricing</p></a>
           </div>
           <div>
-            <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>Community</a>
+            <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'><p>Community</p></a>
           </div>
           <div>
-            <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>Support</a>
+            <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'><p>Support</p></a>
           </div>
         </div>
         <div className={styles.headerBox} id={styles.headerRegisterBox}>
-          {/* Button zum Registrieren mit Link zur Startseite */}
-          <Link href='/'>
+          <Link href='/fetch'>
             <button className={styles.registerButton}>
               Register
             </button>
@@ -74,20 +71,19 @@ export default function CommentList() {
           </a>
         </div>
         <div className={styles.headerBox} id={styles.headerMenuContainer}>
-          {/* Weitere Navigationslinks */}
           <div>
-            <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>Mobile App</a>
+            <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'><p>Mobile App</p></a>
           </div>
           <div>
-            <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>Community</a>
+            <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'><p>Community</p></a>
           </div>
           <div>
-            <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>Company</a>
+            <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'><p>Company</p></a>
           </div>
         </div>
         <div className={styles.headerBox} id={styles.headerRegisterBox}>
           <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>
-            © Photo, Inc. 2019. We love our users!
+            <p>© Photo, Inc. 2019. We love our users!</p>
           </a>
         </div>
       </section>

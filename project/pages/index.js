@@ -46,8 +46,8 @@ export default function Home() {
             Greent IT
           </h1>
           <h2 className={styles.heroSubheading}>
-            Save the planet <br />
-            and your money
+            Mak grün <br />
+            stabiil
           </h2>
         </div>
         <div className={styles.heroButtonContainer}>
