@@ -19,16 +19,16 @@ export default function Home() {
         </div>
         <div className={styles.headerBox} id={styles.headerMenuContainer}>
           <div>
-            <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>Features</a>
+            <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'><p>Features</p></a>
           </div>
           <div>
-            <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>Pricing</a>
+            <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'><p>Pricing</p></a>
           </div>
           <div>
-            <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>Community</a>
+            <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'><p>Community</p></a>
           </div>
           <div>
-            <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>Support</a>
+            <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'><p>Support</p></a>
           </div>
         </div>
         <div className={styles.headerBox} id={styles.headerRegisterBox}>
@@ -41,7 +41,20 @@ export default function Home() {
       </section>
       {/*Die Section ist ein bisschen verschwendet, da keinerlei Inhalte vermittelt werden, vielleicht als Hero-Section umwandeln */}
       <section className={[styles.bodySection, styles.imageSection].join(' ')}>
-
+        <div className={styles.heroHeadingContainer}>
+          <h1 className={styles.heroHeading}>
+            Greent IT
+          </h1>
+          <h2 className={styles.heroSubheading}>
+            Save the planet <br />
+            and your money
+          </h2>
+        </div>
+        <div className={styles.heroButtonContainer}>
+        <button className={styles.cTAButton}>
+          Learn more
+        </button>
+        </div>
       </section>
       {/*Erster Info Bereich oder was hier dann auch immer rein kommt
     4 Unterpunkte/Karten mit Headlines */}
@@ -134,18 +147,18 @@ export default function Home() {
         </div>
         <div className={styles.headerBox} id={styles.headerMenuContainer}>
           <div>
-            <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>Mobile App</a>
+            <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'><p>Mobile App</p></a>
           </div>
           <div>
-            <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>Community</a>
+            <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'><p>Community</p></a>
           </div>
           <div>
-            <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>Company</a>
+            <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'><p>Company</p></a>
           </div>
         </div>
         <div className={styles.headerBox} id={styles.headerRegisterBox}>
           <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>
-            © Photo, Inc. 2019. We love our users!
+            <p>© Photo, Inc. 2019. We love our users!</p>
           </a>
         </div>
       </section>
@@ -159,12 +172,22 @@ export default function Home() {
           font-size: 62,5%;
         }
         section{  
-          padding-left: clamp(4rem, 11.472vw + 0.329rem, 16rem);
-          padding-right: clamp(4rem, 11.472vw + 0.329rem, 16rem);
+          padding-left: clamp(2rem, 17.208vw + -3.507rem, 20rem);
+          padding-right: clamp(2rem, 17.208vw + -3.507rem, 20rem);
+          gap: clamp(1rem, 1.912vw + 0.388rem, 3rem);
         }
         a {
           color: inherit;
           text-decoration: none;
+        }
+        h1 {
+          font-size: clamp(2.4rem, 2.294vw + 1.666rem, 4.8rem);
+        }
+        h2 {
+          font-size: clamp(1.2rem, 1.147vw + 0.833rem, 2.4rem);
+        }
+        p {
+          font-size: clamp(0.8rem, 0.574vw + 0.616rem, 1.4rem);
         }
       `}</style>
     </div>

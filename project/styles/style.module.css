@@ -34,6 +34,7 @@ Grid kann teorethisch auch in flex geänderrt werden, fand grid nur einfacher*/
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    gap: clamp(0.8rem, 0.574vw + 0.616rem, 1.4rem);
 }
 
 
@@ -43,18 +44,23 @@ Grid kann teorethisch auch in flex geänderrt werden, fand grid nur einfacher*/
 
 /*Maximale Größe begrenzen*/
 .logoIcon{
-    max-height: 6rem;
+    height: clamp(2.5rem, 2.39vw + 1.735rem, 5rem);
 }
 
 /*Größe und Position festlegen*/
 .registerButton{
     max-height: 6rem;
-    max-width: 50%;
+    max-width: 100%;
     float: right;
     padding-left: clamp(0.5rem, 0.478vw + 0.347rem, 1rem);
     padding-right: clamp(0.5rem, 0.478vw + 0.347rem, 1rem);
     padding-top: clamp(0.25rem, 0.239vw + 0.174rem, 0.5rem);
     padding-bottom: clamp(0.25rem, 0.239vw + 0.174rem, 0.5rem);
+    font-size: clamp(0.8rem, 0.574vw + 0.616rem, 1.4rem);
+}
+
+.heroHeadingContainer{
+    color: #06A64A;
 }
 
 /*Anderes Padding top und bottom als beim Header
@@ -69,23 +75,13 @@ Grid um Row-Gap einzufügen für besseres Spacing*/
 
 /*Bildbereich*/
 .imageSection{
+    background-color: #a0a0a0;
     background-image: url('../public/hintergrund.svg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
     height: 60vh;
     max-height: 60vh;
-}
-
-/*Abstand der Elemente festlegen
-Sollte aber auch mit Variablen/auf höherer Ebene passieren können*/
-.infoContainer{
-    gap: clamp(1rem, 1.912vw + 0.388rem, 3rem);
-}
-
-/*Größe h1 festlegen, kann auch global gemacht werden und mit clamp-function für bessere Skalierbarkeit*/
-.headline1{
-    font-size: 4.8rem;
 }
 
 /*Grid mit gleicher Spaltengröße und dynamischem Abstand*/
@@ -101,16 +97,6 @@ Sollte aber auch mit Variablen/auf höherer Ebene passieren können*/
     padding-right: clamp(1rem, 0.956vw + 0.694rem, 2rem);
     padding-bottom: clamp(0.5rem, 0.478vw + 0.347rem, 1rem);
     padding-top: clamp(0.5rem, 0.478vw + 0.347rem, 1rem);
-}
-
-/*Größe h2 festlegen, kann auch global gemacht werden und mit clamp-function für bessere Skalierbarkeit*/
-.headline2{
-    font-size: 2.4rem;
-}
-
-/*Auch hier global skalierbar machen bzw. dynamisch veränderbar*/
-.infoText{
-    font-size: 1.1rem;
 }
 
 /*2 Spalten mit dynamischen Abstand*/
