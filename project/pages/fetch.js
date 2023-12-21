@@ -1,7 +1,9 @@
 import React from "react";
-import styles from '../styles/style.module.css'
+import styles from '../styles/style.module.css';
 import useSWR from 'swr';
 import Link from 'next/link';
+
+
 
 // Ein Funktion, die Fetch verwendet, um Daten von einer URL abzurufen und in JSON umzuwandeln
 const fetcher = (url) => fetch(url).then((res) => res.json());
