@@ -47,7 +47,7 @@ export default function Home() {
           </h1>
           <h2 className={styles.heroSubheading}>
             Mak grün <br />
-            stabiil
+            TestTomi
           </h2>
         </div>
         <div className={styles.heroButtonContainer}>
